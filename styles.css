@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+}
+
+    .hero-container {
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    }
+
+    .backgroud-clip {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    h1 {
+        height: 35PX;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        font-size:60px;
+    }
+
+    .menu {
+        width:50%;
+    }
+    
+    ul {
+        display: fleX;
+        position: fixed;
+        justify-content: space-between;
+        list-style: none;
+        width: 1000px;
+    }
+
+    a {
+        font-family: 'Oswald', sans-serif;
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: red;
+    }
+
+.arrows {
+    width: 80px;
+    height: 122px;
+}
+
+.arrows path {
+    stroke: white;
+    fill: transparent;
+    stroke-width: 6px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+    
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+50% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay:  -1.2s;
+    -webkit-animation-delay:  -1.2s;
+}
+
+.arrows path.a2 {
+    animation-delay:  -0.8s;
+    -webkit-animation-delay:  -0.8;
+}
+
+.arrows path.a3 {
+    animation-delay:  -0.4s;
+    -webkit-animation-delay:  -0.4s;
+}
+.arrows path.a4 {
+    animation-delay:  0s;
+    -webkit-animation-delay:  0s;
+}
+
+.profile-container {
+    color: black;
+    height:905px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./pagina\ 02.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-content {
+    width: 30%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    height: 550px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 3.5px solid red;
+}
+
+.name-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.profile-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+
+}
+
+main {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social {
+    width: 100px;
+    height: 100px;
+}
+
+.social img { 
+   width: 100%;
+}
+
+.social:hover {
+    transform: scale(1.2) rotate(-15deg);
+}
+
+.profile-sinopse {
+    width: 400px;
+    font-family: 'Oswald', sans-serif;
+    color: white ;
+    font-size: 24.7px;
+    text-align: end;
+    text-align: left;
+    text-indent: 29px;
+
+}
+
+.project-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./pagina\ 03.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
+.project-content {
+    margin-bottom: 70vh;
+    width: 75%;
+    height: 75%;
+    grid-template-rows: repeat(1fr, 3);
+}
+
+.position-container {
+    width: 90%;
+    height: 90px;
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+.project-image1 {
+    margin-top: 320px;
+    margin-left: -252px;
+    width: 195px;
+    height: 215px;
+    border-radius: 15px;
+    right: 30px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+}
+
+.project-image1:hover {
+    box-shadow: 0 0 20px red;
+    border: solid 0.5px pink;
+
+}
+
+.position-container1 {
+    margin-top: 340px;
+    margin-right: 132px;
+    width: 100vh;
+    height: 40vh;
+    border-radius: 15px;
+    box-shadow: -12px 16px  13px red;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(212, 203, 203);
+    
+}
+
+.project-image2 {
+    margin-top: 160px;
+    width: 195px;
+    height: 215px;
+    border-radius: 15px;
+}
+
+
+.project-card2 {
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    display: flex;
+    margin-top: 600px;
+    margin-left: 290px;
+}
+
+.project-text2 {
+    margin-top: -250px;
+    margin-left: 220px;
+    width: 100vh;
+    border-radius: 15px;
+    box-shadow: -12px 16px  13px red;
+    color: rgb(212, 203, 203);
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+}
